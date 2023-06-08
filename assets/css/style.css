@@ -106,7 +106,7 @@ body {
 
 .cabecera .menu-superior li {
     padding: 10px;
-    
+
 }
 
 .cabecera .menu input {
@@ -124,6 +124,7 @@ main .articulo-destacado {
 .cabecera .menu-superior a {
     text-decoration: none;
 }
+
 .cabecera .menu-superior .fb i {
     color: #3b5998;
 }
@@ -182,13 +183,14 @@ main .articulo-destacado {
     transition: opacity 100ms;
     visibility: hidden;
     opacity: 0;
-  }
-  .overlay:target {
+}
+
+.overlay:target {
     visibility: visible;
     opacity: 1;
-  }
-  
-  .popup {
+}
+
+.popup {
     margin: 100px auto;
     padding: 10px;
     background: #fff;
@@ -196,21 +198,21 @@ main .articulo-destacado {
     width: 30%;
     position: relative;
     transition: all 1.5s ease-in-out;
-  }
+}
 
-  .popup h2 {
+.popup h2 {
     position: relative;
     color: #333;
     font-family: Tahoma, Arial, sans-serif;
-  }
+}
 
-  .popup .centro {
+.popup .centro {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
-  }
-  
-  .popup .close {
+}
+
+.popup .close {
     position: absolute;
     right: 12px;
     transition: all 200ms;
@@ -218,26 +220,23 @@ main .articulo-destacado {
     font-weight: bold;
     text-decoration: none;
     color: #333;
-  }
-  .popup .close:hover {
-    color: green;
-  }
-  .popup .content {
-    margin-top: 45px;
-  }
-  
-  @media screen and (max-width: 700px){
-    .popup{
-      width: 70%;
-    }
-  }
+}
 
-  .formulario-login {
+.popup .close:hover {
+    color: green;
+}
+
+.popup .content {
+    margin-top: 45px;
+}
+
+
+.formulario-login {
     display: flex;
     flex-direction: column;
-  }
+}
 
-  .formulario-login input {
+.formulario-login input {
     display: block;
     border-radius: 5px;
     font-size: 16px;
@@ -245,9 +244,9 @@ main .articulo-destacado {
     border: 0;
     padding: 10px 10px;
     margin-bottom: 5px;
-  }
+}
 
-  .formulario-login button {
+.formulario-login button {
     cursor: pointer;
     color: #fff;
     background-color: red;
@@ -258,56 +257,57 @@ main .articulo-destacado {
     padding: 10px 0;
     margin-top: 10px;
     border-radius: 5px;
-  }
+}
 
-  footer .enlaces {
+footer .enlaces {
     background-color: #272626;
     color: white;
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  footer .copyright {
+footer .copyright {
     display: flex;
     justify-content: start;
     align-items: center;
     background-color: black;
     color: white;
     height: 60px;
-  }
+}
 
-  footer .copyright p {
+footer .copyright p {
     font-family: 'Poppins';
     margin-left: 5%;
-  }
+}
 
-  footer .enlaces {
+footer .enlaces {
     font-family: 'Titillium Web', sans-serif;
-  }
+}
 
-  footer .enlaces .enlaces-rapidos ul {
+footer .enlaces .enlaces-rapidos ul {
     list-style: none;
-    margin-top:8px;
-  }
+    margin-top: 8px;
+}
 
-  footer .enlaces .enlaces-rapidos li:hover {
+footer .enlaces .enlaces-rapidos li:hover {
     color: #98ccf4;
     transform: scale(1.2);
     font-weight: bold;
     cursor: pointer;
-  }
+}
 
 
 footer .enlaces .quienes-somos {
-   flex-basis: 30%;
-   font-weight: bold;
-   margin:20px;
-   font-family: 'Titillium Web', sans-serif;
+    flex-basis: 30%;
+    font-weight: bold;
+    margin: 20px;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 footer .enlaces .quienes-somos p {
     margin-top: 10px;
 }
+
 footer .enlaces .quienes-somos p:hover {
     color: #98ccf4;
     cursor: pointer;
@@ -318,7 +318,7 @@ footer .enlaces .quienes-somos span {
 }
 
 footer .enlaces-rapidos {
-    margin:20px;
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -329,7 +329,7 @@ footer .enlaces-rapidos span {
 }
 
 footer .enlaces .contacto {
-    margin:20px;
+    margin: 20px;
 }
 
 footer .enlaces .contacto h1 {
@@ -362,8 +362,16 @@ footer .enlaces .contacto form input {
 footer .enlaces .contacto form button {
     background-color: green;
     color: white;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding: 8px;
     border-radius: 4px;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 700px) {
+    .popup {
+        width: 70%;
+    }
 }
