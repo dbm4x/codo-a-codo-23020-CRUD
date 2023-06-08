@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: #98ccf4;
+}
+
+.cabecera {
+    background-color: #272626;
+    padding-bottom: 3px;
+
+}
+
+.cabecera .logo {
+    display: flex;
+    justify-content: center;
+    background-color: #98ccf4;
+}
+
+.cabecera .logo img {
+    height: 350px;
+    width: auto;
+}
+
+
+.cabecera .menu {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    border: 1px white dashed;
+    border-radius: 2%;
+    margin-top: 3px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    font-family: Tahoma, Arial, sans-serif;
+
+}
+
+
+.cabecera .menu .buscador {
+    display: flex;
+    margin: 2px;
+}
+
+.cabecera .menu .buscador button {
+    background-color: green;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+
+.cabecera .menu-items {
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
+    width: 75%;
+}
+
+.cabecera .menu .menu-items li {
+    padding: 10px;
+}
+
+.cabecera .menu .menu-items li:hover {
+    color: red;
+    cursor: pointer;
+    background-color: gainsboro;
+}
+
+.cabecera .menu-superior {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    border-bottom: 1px solid white;
+    margin-bottom: 3px;
+}
+
+.cabecera .menu-superior .slogan h2 {
+    font-family: Tahoma, Arial, sans-serif;
+    margin-left: 5px;
+}
+
+.cabecera .menu-superior .derecha {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cabecera .menu-superior ul {
+    display: flex;
+    list-style: none;
+    font-size: 30px;
+}
+
+.cabecera .menu-superior li {
+    padding: 10px;
+    
+}
+
+.cabecera .menu input {
+    margin-right: 2px;
+}
+
+
+main .articulo-destacado {
+    padding: 10px 10px 20px 20px;
+    font-family: 'Poppins';
+
+}
+
+
+.cabecera .menu-superior a {
+    text-decoration: none;
+}
+.cabecera .menu-superior .fb i {
+    color: #3b5998;
+}
+
+.cabecera .menu-superior .twitter i {
+    color: #00acee;
+}
+
+.cabecera .menu-superior .instagram i {
+    display: flex;
+    width: 28px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    color: #fff;
+    font-size: 26px;
+    text-decoration: none;
+    background: #d6249f;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.cabecera .menu-superior .youtube i {
+    color: #c4302b;
+}
+
+.cabecera .menu-superior .rss i {
+    color: #ee802f;
+}
+
+.cabecera .menu-superior .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 5px;
+    font-family: Tahoma, Arial, sans-serif;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 100ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 100px auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 1.5s ease-in-out;
+  }
+
+  .popup h2 {
+    position: relative;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+
+  .popup .centro {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
+  
+  .popup .close {
+    position: absolute;
+    right: 12px;
+    transition: all 200ms;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .close:hover {
+    color: green;
+  }
+  .popup .content {
+    margin-top: 45px;
+  }
+  
+  @media screen and (max-width: 700px){
+    .popup{
+      width: 70%;
+    }
+  }
+
+  .formulario-login {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formulario-login input {
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    background: gainsboro;
+    border: 0;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+  }
+
+  .formulario-login button {
+    cursor: pointer;
+    color: #fff;
+    background-color: red;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 80px;
+    border: 0;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+
+  footer .enlaces {
+    background-color: #272626;
+    color: white;
+    padding: 10px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+  }
+
+  footer .copyright {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 60px;
+  }
+
+  footer .copyright p {
+    font-family: 'Poppins';
+    margin-left: 5%;
+  }
