@@ -802,7 +802,7 @@ axios.delete(url_api+'/noticias/'+id, { headers })
         texto: this.texto,
         tipo_noticia: this.tipoNoticia,
         url: this.url,
-        tags: this.tags.split(",").map(tag => tag.trim()).join(", ")
+        tags: this.tags.length ? this.tags.split(",").map(tag => tag.trim()).join(", ") : ''
       };
       
       const headers = {
