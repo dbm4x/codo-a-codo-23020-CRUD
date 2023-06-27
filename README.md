@@ -6,4 +6,4 @@
 
 Demo:
 
-https://dbm4x.github.io/codo-a-codo-23020-CRUD/
+https://metagamingblog.netlify.app/
