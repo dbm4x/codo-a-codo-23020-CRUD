@@ -1276,7 +1276,7 @@ const LeerNoticiaComponent = {
   <div class="generales">
   <div class="noticias">
     <div class="titulo">
-    <router-link to="/">#MetaGaming</router-link> > <router-link to="/retro">{{obtenerNombreCategoria(noticias.categoria_noticia)}}</router-link>
+        <router-link to="/">#MetaGaming</router-link> > <router-link :to="obtenerRutaCategoria(obtenerNombreCategoria(noticias.categoria_noticia))">{{obtenerNombreCategoria(noticias.categoria_noticia)}}</router-link>
     </div>
     <div class="container news-container mt-5">
     <div class="row">
@@ -1450,6 +1450,22 @@ const LeerNoticiaComponent = {
     emitter.on('foo', this.onFoo);
   },
   methods: {
+    obtenerRutaCategoria(categoria) {
+        switch (categoria) {
+          case "PC":
+            return '/pc';
+          case "RETRO":
+            return '/retro';
+          case "DESTACADOS":
+            return '/destacados';
+          case "PS5":
+            return '/ps5';
+          case "XSERIES":
+            return '/xseries';
+          default:
+            return '/';
+        }
+      },
     verificarToken() {
       const token = localStorage.getItem('token');
       this.claseAdmActiva = token !== null;
