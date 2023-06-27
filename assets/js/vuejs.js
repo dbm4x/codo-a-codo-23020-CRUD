@@ -636,7 +636,7 @@ const MainComponent = {
         this.tipoNoticia = noticia.noticia_tipo;
         this.texto = noticia.texto_noticia;
         this.url = noticia.url;
-        this.tags = noticia.tags.join(", ");
+        this.tags = noticia.tags ? noticia.tags.join(", ") : '';
         // Almacenar el ID de la noticia que se está actualizando
         this.idActualizar = id;
         this.actualiza()
