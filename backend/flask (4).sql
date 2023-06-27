@@ -133,7 +133,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `usuario`, `password`) VALUES
-(1, 'juanjo', 'a9f89881a60a3d7dabe16689e74c1221');
+(1, 'juanjo', '21232f297a57a5a743894a0e4a801fc3');
 
 --
 -- Índices para tablas volcadas
