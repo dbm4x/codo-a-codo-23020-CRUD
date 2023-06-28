@@ -480,7 +480,21 @@ const MainComponent = {
 
 
      </div>
-
+     <div class="loader" v-if="isLoading">
+     <div class="centrar">
+       <div class="pacman">
+         <span class="top"></span>
+         <span class="bottom"></span>
+         <span class="left"></span>
+         <div class="eye"></div>
+       </div>
+       <div class="circles">
+         <span class="one"></span>
+         <span class="two"></span>
+         <span class="three"></span>
+       </div>
+     </div>
+   </div>
 </main>
   `,
   data() {
@@ -506,7 +520,8 @@ const MainComponent = {
       actualizarNoticia: false,
       categorias_valores: [],
       tipo_noticia_valores: [],
-      tags: []
+      tags: [],
+      isLoading: true
     };
   },
   created() {
@@ -712,9 +727,11 @@ const MainComponent = {
     })
         .then(response => {
           this.noticias = response.data;
+          this.isLoading = false
         })
         .catch(error => {
           console.error('Error al obtener las noticias:', error);
+          this.isLoading = false
         });
     },
     eliminarNoticia(id) {
@@ -889,12 +906,28 @@ const PCComponent = {
     </div>
   </div>
 </section>
+<div class="loader" v-if="isLoading">
+  <div class="centrar">
+    <div class="pacman">
+      <span class="top"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+      <div class="eye"></div>
+    </div>
+    <div class="circles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </div>
+  </div>
+</div>
   `,
   data() {
     return {
       noticias: [],
       categorias_valores: [],
-      tipo_noticia_valores: []
+      tipo_noticia_valores: [],
+      isLoading: true
     }
   },
   methods: {
@@ -922,8 +955,10 @@ const PCComponent = {
         //},
       }).then(response => {
             this.noticias = response.data;
+            this.isLoading = false
       }).catch(error => {
             console.error('Error al obtener las noticias:', error);
+            this.isLoading = false
       });
 
     }
@@ -971,12 +1006,28 @@ const DestacadosComponent = {
     </div>
   </div>
 </section>
+<div class="loader" v-if="isLoading">
+  <div class="centrar">
+    <div class="pacman">
+      <span class="top"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+      <div class="eye"></div>
+    </div>
+    <div class="circles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </div>
+  </div>
+</div>
   `,
   data() {
     return {
       noticias: [],
       categorias_valores: [],
-      tipo_noticia_valores: []
+      tipo_noticia_valores: [],
+      isLoading: true
     }
   },
   methods: {
@@ -1004,8 +1055,10 @@ const DestacadosComponent = {
         //},
       }).then(response => {
             this.noticias = response.data;
+            this.isLoading = false
       }).catch(error => {
             console.error('Error al obtener las noticias:', error);
+            this.isLoading = false
       });
 
     }
@@ -1053,12 +1106,28 @@ const RetroComponent = {
     </div>
   </div>
 </section>
+<div class="loader" v-if="isLoading">
+  <div class="centrar">
+    <div class="pacman">
+      <span class="top"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+      <div class="eye"></div>
+    </div>
+    <div class="circles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </div>
+  </div>
+</div>
   `,
   data() {
     return {
       noticias: [],
       categorias_valores: [],
-      tipo_noticia_valores: []
+      tipo_noticia_valores: [],
+      isLoading: false
     }
   },
   methods: {
@@ -1086,8 +1155,10 @@ const RetroComponent = {
         //},
       }).then(response => {
             this.noticias = response.data;
+            this.isLoading = false
       }).catch(error => {
             console.error('Error al obtener las noticias:', error);
+            this.isLoading = false
       });
 
     }
@@ -1135,12 +1206,28 @@ const PS5Component = {
     </div>
   </div>
 </section>
+<div class="loader" v-if="isLoading">
+  <div class="centrar">
+    <div class="pacman">
+      <span class="top"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+      <div class="eye"></div>
+    </div>
+    <div class="circles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </div>
+  </div>
+</div>
   `,
   data() {
     return {
       noticias: [],
       categorias_valores: [],
-      tipo_noticia_valores: []
+      tipo_noticia_valores: [],
+      isLoading: true
     }
   },
   methods: {
@@ -1168,8 +1255,10 @@ const PS5Component = {
         //},
       }).then(response => {
             this.noticias = response.data;
+            this.isLoading = false
       }).catch(error => {
             console.error('Error al obtener las noticias:', error);
+            this.isLoading = false
       });
 
     }
@@ -1217,12 +1306,28 @@ const XseriesComponent = {
     </div>
   </div>
 </section>
+<div class="loader" v-if="isLoading">
+<div class="centrar">
+  <div class="pacman">
+    <span class="top"></span>
+    <span class="bottom"></span>
+    <span class="left"></span>
+    <div class="eye"></div>
+  </div>
+  <div class="circles">
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+  </div>
+</div>
+</div>
   `,
   data() {
     return {
       noticias: [],
       categorias_valores: [],
-      tipo_noticia_valores: []
+      tipo_noticia_valores: [],
+      isLoading: true
     }
   },
   methods: {
@@ -1250,8 +1355,10 @@ const XseriesComponent = {
         //},
       }).then(response => {
             this.noticias = response.data;
+            this.isLoading = false
       }).catch(error => {
             console.error('Error al obtener las noticias:', error);
+            this.isLoading = false
       });
 
     }
@@ -1276,7 +1383,7 @@ const LeerNoticiaComponent = {
   <div class="generales">
   <div class="noticias">
     <div class="titulo">
-      <router-link to="/">#MetaGaming</router-link> > <router-link :to="obtenerRutaCategoria(obtenerNombreCategoria(noticias.categoria_noticia))">{{obtenerNombreCategoria(noticias.categoria_noticia)}}</router-link>
+    <router-link to="/">#MetaGaming</router-link> > <router-link :to="obtenerRutaCategoria(obtenerNombreCategoria(noticias.categoria_noticia))">{{obtenerNombreCategoria(noticias.categoria_noticia)}}</router-link> 
     </div>
     <div class="container news-container mt-5">
     <div class="row">
@@ -1426,6 +1533,21 @@ const LeerNoticiaComponent = {
         <i class="fa fa-exclamation-circle"></i>
         <span>¡Error! Ha ocurrido un problema. Intente nuevamente.</span>
     </div>
+    <div class="loader" v-if="isLoading">
+  <div class="centrar">
+    <div class="pacman">
+      <span class="top"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+      <div class="eye"></div>
+    </div>
+    <div class="circles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </div>
+  </div>
+</div>
   `,
   data() {
     return {
@@ -1443,14 +1565,15 @@ const LeerNoticiaComponent = {
       comentario: '',
       success: false,
       error: false,
-      claseAdmActiva: false
+      claseAdmActiva: false,
+      isLoading: true
     }
   },
   created() {
     emitter.on('foo', this.onFoo);
   },
   methods: {
-    obtenerRutaCategoria(categoria) {
+      obtenerRutaCategoria(categoria) {
         switch (categoria) {
           case "PC":
             return '/pc';
@@ -1465,7 +1588,8 @@ const LeerNoticiaComponent = {
           default:
             return '/';
         }
-      },
+    },
+
     verificarToken() {
       const token = localStorage.getItem('token');
       this.claseAdmActiva = token !== null;
@@ -1544,6 +1668,7 @@ const LeerNoticiaComponent = {
         //},
       }).then(response => {
             this.noticias = response.data;
+            this.isLoading = false
       }).catch(error => {
             console.error('Error al obtener las noticias:', error);
       });
@@ -1622,10 +1747,26 @@ const BusquedaComponent = {
     </div>
   </div>
 </section>
+<div class="loader" v-if="isLoading">
+  <div class="centrar">
+    <div class="pacman">
+      <span class="top"></span>
+      <span class="bottom"></span>
+      <span class="left"></span>
+      <div class="eye"></div>
+    </div>
+    <div class="circles">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+    </div>
+  </div>
+</div>
   `,
   data() {
     return {
-      noticias: []
+      noticias: [],
+      isLoading: true
     }
   },
   methods: {
@@ -1642,8 +1783,10 @@ const BusquedaComponent = {
         //},
       }).then(response => {
             this.noticias = response.data;
+            this.isLoading = false;
       }).catch(error => {
             console.error('Error al obtener las noticias:', error);
+            this.isLoading = false;
       });
 
     }
@@ -1662,6 +1805,7 @@ mounted() {
 }
 
 }
+
 
 
 const router = VueRouter.createRouter({
@@ -1762,5 +1906,3 @@ app.component('footer-component', FooterComponent);
 
 app.use(router);
 const vm = app.mount('#app');
-
-
