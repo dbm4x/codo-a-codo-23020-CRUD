@@ -4,7 +4,7 @@
 
 ### Grupo 16
 
-Trabajo práctico de CRUD con Python con Flask.
+Trabajo práctico de CRUD con Python y Flask.
 
 Demo: https://metagamingblog.netlify.app/
 
