@@ -1906,3 +1906,4 @@ app.component('footer-component', FooterComponent);
 
 app.use(router);
 const vm = app.mount('#app');
+
