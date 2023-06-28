@@ -949,7 +949,7 @@ const PCComponent = {
 
     fetchNoticias() {
 
-      axios.get(url_api+'noticias/', {
+      axios.get(url_api+'/noticias/', {
         //headers: {
         //  Authorization: `Bearer ${token}`, // Agregar el token al encabezado de la solicitud
         //},
