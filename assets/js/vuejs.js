@@ -1276,7 +1276,7 @@ const LeerNoticiaComponent = {
   <div class="generales">
   <div class="noticias">
     <div class="titulo">
-        <router-link to="/">#MetaGaming</router-link> > <router-link :to="obtenerRutaCategoria(obtenerNombreCategoria(noticias.categoria_noticia))">{{obtenerNombreCategoria(noticias.categoria_noticia)}}</router-link>
+      <router-link to="/">#MetaGaming</router-link> > <router-link :to="obtenerRutaCategoria(obtenerNombreCategoria(noticias.categoria_noticia))">{{obtenerNombreCategoria(noticias.categoria_noticia)}}</router-link>
     </div>
     <div class="container news-container mt-5">
     <div class="row">
