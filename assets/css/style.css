@@ -37,6 +37,7 @@ body {
 
   #stexto::before {
     content: "#MetaGaming";
+    vertical-align: center;
   }
 }
 
