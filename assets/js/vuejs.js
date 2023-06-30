@@ -7,7 +7,7 @@ const HeaderComponent = {
   <div class="menuSuperior">
     <div class="slogan">
       <router-link to="/">
-        <h3 id="stexto" class="stexto">#MetaGaming</h3>
+        <h3 id="stexto" class="stexto"></h3>
       </router-link>
     </div>
 
