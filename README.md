@@ -1,4 +1,4 @@
-# TPO CRUD con Python - Codo a codo 4.0
+# Trabajo práctico CRUD con Python - Codo a codo 4.0
 
 ## Comisión 23020
 
