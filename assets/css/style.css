@@ -1689,7 +1689,7 @@ cursor: pointer;
 }
 .cabecera .menuSuperior .slogan {
   #stexto::before {
-    content: "#MGaming";
+    content: "#MG";
   }
 }
 
