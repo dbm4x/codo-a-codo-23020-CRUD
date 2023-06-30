@@ -34,6 +34,10 @@ body {
   color: white;
   border-bottom: 1px solid white;
   padding: 8px;
+
+  #stexto::before {
+    content: "#MetaGaming";
+  }
 }
 
 .cabecera .menuSuperior .slogan h2 {
@@ -684,9 +688,6 @@ right: 0; /* Añadido */
 
 .stexto {
   font-weight: bold;
-  #stexto::before {
-    content: "#MetaGaming";
-  }
 }
 
 .articulo-lista .post {
