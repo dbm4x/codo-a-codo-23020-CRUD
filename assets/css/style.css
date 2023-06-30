@@ -1683,8 +1683,10 @@ cursor: pointer;
 .fot .enlaces .quienes-somos {
   flex-basis: 100%;
 }
-.cabecera .menuSuperior .slogan .stexto {
-  font-size: 18px;
+.cabecera .menuSuperior .slogan {
+  #stexto::before {
+    content: "#MG";
+  }
 }
 
 .generales .noticias .titulo {
