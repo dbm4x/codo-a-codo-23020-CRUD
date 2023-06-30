@@ -684,6 +684,9 @@ right: 0; /* Añadido */
 
 .stexto {
   font-weight: bold;
+  #stexto::before {
+    content: "#MetaGaming";
+  }
 }
 
 .articulo-lista .post {
