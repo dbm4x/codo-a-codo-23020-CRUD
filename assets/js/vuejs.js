@@ -1,5 +1,5 @@
 const emitter = mitt()
-const url_api = 'https://dbm4x.pythonanywhere.com'
+const url_api = 'https://dbm4x.pythonanywhere.com';
 
 const HeaderComponent = {
   template: `
@@ -1399,9 +1399,9 @@ const LeerNoticiaComponent = {
     </div>
     <div class="row">
       <div class="col-12">
-        <p class="news-content">
+        <div class="news-content">
         <div v-html="noticias.texto_noticia" class="noticia-texto"></div>
-        </p>
+        </div>
       </div>
     </div>
     
