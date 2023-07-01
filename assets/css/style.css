@@ -278,11 +278,9 @@ main .articulo-destacado a {
 }
 
 .popup {
-  margin: 100px auto;
   padding: 10px;
   background: #fff;
   border-radius: 5px;
-  width: 30%;
   position: relative;
   transition: all 1.5s ease-in-out;
 }
@@ -1096,8 +1094,7 @@ cursor: pointer;
 .news-container {
   max-width: 90%;
   margin: 0 auto;
-  padding-left: 15px; /* Ajusta el margen izquierdo */
-  padding-right: 15px; /* Ajusta el margen derecho */
+  padding-left: 10px; /* Ajusta el margen izquierdo */
 }
 
 .news-title {
@@ -1120,6 +1117,9 @@ cursor: pointer;
 .news-content {
   font-size: 16px;
   line-height: 1.5;
+}
+
+.news-content img {
   width: 100%;
   max-width: 100%;
 }
@@ -1256,7 +1256,6 @@ cursor: pointer;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 100ms;
   overflow-y: scroll;
-  padding-bottom: 12em;
 }
 
 .popupAgregarNoticia {
@@ -1268,9 +1267,8 @@ cursor: pointer;
   border-radius: 5px;
   position: absolute;
   transition: all 1.5s ease-in-out;
-  max-height: calc(100% - 4em);
+  max-height: calc(100% - 3em);
   overflow-y: auto;
-  margin-bottom: 2em;
 }
 
 
@@ -1632,11 +1630,7 @@ cursor: pointer;
 
 
 
-@media screen and (max-width: 700px) {
-  .popup {
-      width: 70%;
-  }
-}
+
 
 @media (max-width: 768px) {
   .articulo-destacado .titulo {
@@ -1706,11 +1700,6 @@ cursor: pointer;
     flex-direction:row;
   }
 
-  .popup {
-
-  width: 70%;
-}
-
   .cabecera .menu .menu-items {
     display: none;
     flex-direction: column;
@@ -1736,5 +1725,6 @@ cursor: pointer;
     color: white;
     margin-left: 2px;
   }
+  
 
 }
