@@ -24,8 +24,10 @@ body {
   width: auto;
 }
 
-
-
+.noticia-texto {
+  width: 100%;
+  max-width: 100%;
+}
 
 .cabecera .menuSuperior {
   display: flex;
