@@ -1705,7 +1705,11 @@ cursor: pointer;
     justify-content: space-between;
     flex-direction:row;
   }
-  
+
+  .popup {
+
+  width: 70%;
+}
 
   .cabecera .menu .menu-items {
     display: none;
