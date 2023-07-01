@@ -24,10 +24,6 @@ body {
   width: auto;
 }
 
-.noticia-texto {
-  width: 100%;
-  max-width: 100%;
-}
 
 .cabecera .menuSuperior {
   display: flex;
@@ -1133,7 +1129,8 @@ cursor: pointer;
 .noticia-texto {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
-  /* Otros estilos personalizados aquí */
+  width: 100%;
+  max-width: 100%;
 }
 
 .news-tags {
