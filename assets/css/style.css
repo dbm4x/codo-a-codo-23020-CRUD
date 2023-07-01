@@ -1636,6 +1636,9 @@ cursor: pointer;
   .popup {
       width: 70%;
   }
+  .popupAgregarNoticia {
+     width: 70%;
+  }
 }
 
 
