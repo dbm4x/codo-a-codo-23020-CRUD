@@ -278,12 +278,15 @@ main .articulo-destacado a {
 }
 
 .popup {
+  margin: 100px auto;
   padding: 10px;
   background: #fff;
   border-radius: 5px;
+  width: 30%;
   position: relative;
   transition: all 1.5s ease-in-out;
 }
+
 
 .popup h2 {
   position: relative;
