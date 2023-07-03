@@ -20,7 +20,7 @@ const HeaderComponent = {
         <li class="rss"><a href="#" target="_blank"><i class="fa fa-rss"></i></a></li>
       </ul>
 
-      <button @click="verLogin" class="button" v-if="!verificarToken()">Iniciar sesión</button>
+      <button @click="verLogin" class="button" v-if="!verificarToken()">Login</button>
       <button @click="salir" class="button" v-if="verificarToken()">Logout</button>
     </div>
   </div>
